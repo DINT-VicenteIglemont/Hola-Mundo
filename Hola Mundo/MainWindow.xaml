@@ -1,0 +1,19 @@
+﻿<Window x:Class="Hola_Mundo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hola_Mundo"
+        mc:Ignorable="d"
+        Title="Hola Mundo" Height="450" Width="800">
+
+    <Grid>
+
+        <TextBlock x:Name="SaludoTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="¡Hola, Mundo!" VerticalAlignment="Top" Margin="252,28,0,0" Height="133" Width="352" FontSize="48" Foreground="#FFBF0101"/>
+        <TextBlock x:Name="NombreTextBlock" HorizontalAlignment="Left" Margin="202,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="80" Height="26"><Run Text="Nombre"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="NombreTextBox" HorizontalAlignment="Left" Height="21" Margin="202,198,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304"/>
+        <Button x:Name="AceptarButton" Content="Saludar" HorizontalAlignment="Left" Margin="512,198,0,0" VerticalAlignment="Top" Width="92" Height="21" Click="AceptarButton_Click"/>
+        <Button x:Name="LimpiarButton" Content="Limpiar" HorizontalAlignment="Left" Margin="512,224,0,0" VerticalAlignment="Top" Width="92" Click="LimpiarButton_Click"/>
+
+    </Grid>
+</Window>
